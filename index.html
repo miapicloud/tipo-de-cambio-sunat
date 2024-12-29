@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAPI | Tipo de Cambio Mensual</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <h1>Tipo de Cambio Mensual</h1>
+    <div class="botones-navegacion">
+        <button onclick="cambiarMes(-1)">&lt;</button>
+        <span id="titulo-mes" class="titulo-mes"></span>
+        <button onclick="cambiarMes(1)" class="boton-siguiente">&gt;</button>
+    </div>
+
+    <div class="contenedor-calendario">
+        <div class="dias-semana">
+            <div>Domingo</div>
+            <div>Lunes</div>
+            <div>Martes</div>
+            <div>Miercoles</div>
+            <div>Jueves</div>
+            <div>Viernes</div>
+            <div>Sabado</div>
+        </div>
+        <div id="calendario" class="calendario"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
